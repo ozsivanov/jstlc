@@ -1,0 +1,21 @@
+{
+  "name": "jstlc",
+  "version": "1.0.0",
+  "description": "JS TLC - Front End Optimization",
+  "homepage": "https://github.com/arkon/jstlc",
+  "authors": [
+    "Daniil M.",
+    "Eugene C."
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.3.5"
+  }
+}

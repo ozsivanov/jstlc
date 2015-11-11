@@ -1,0 +1,18 @@
+# OS stuff
+.DS_Store
+Thumbs.db
+
+# Packages
+**/bower_components/
+node_modules
+npm-debug.log
+
+# IDEs/build tools
+.idea
+.sass-cache
+coverage
+docs
+
+# Built files
+style.css
+style.css.map

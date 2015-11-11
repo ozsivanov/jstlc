@@ -1,0 +1,30 @@
+{
+  "count": 5,
+  "data": [
+    {
+      "id": 1,
+      "src": "./images/gallery/gallery-pic-1.jpg",
+      "caption": "We make awesome stuff"
+    },
+    {
+      "id": 2,
+      "src": "./images/gallery/gallery-pic-2.jpg",
+      "caption": "He loves Tinfusion!"
+    },
+    {
+      "id": 3,
+      "src": "./images/gallery/gallery-pic-3.jpg",
+      "caption": "Some of our happy customers"
+    },
+    {
+      "id": 4,
+      "src": "./images/gallery/gallery-pic-4.jpg",
+      "caption": "We promise to make you happy!"
+    },
+    {
+      "id": 5,
+      "src": "./images/gallery/gallery-pic-5.jpg",
+      "caption": "<3"
+    }
+  ]
+}
