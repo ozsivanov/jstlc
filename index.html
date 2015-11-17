@@ -42,6 +42,19 @@
 			color: #f062ad;
 		}
 
+		p + p {
+			margin-top: 0.25em;
+		}
+
+		code {
+			background-color: #3949ab;
+			border-radius: 3px;
+			display: inline-block;
+			font-family: 'Consolas', 'Courier New', monospace;
+			margin: 0.25em 0;
+			padding: 0.25em 0.5em;
+		}
+
 		ul, ol {
 			margin-left: 1.25em;
 		}
@@ -64,15 +77,16 @@
 		<li>
 			<p><strong>Bower</strong></p>
 			<p><a href="http://bower.io/">http://bower.io/</a></p>
+			<p><code>$ npm install -g bower</code></p>
 		</li>
 		<li>
 			<p><strong>Grunt</strong></p>
 			<p><a href="http://gruntjs.com/getting-started">http://gruntjs.com/</a></p>
+			<p><code>$ npm install -g grunt-cli</code></p>
 		</li>
 		<li>
 			<p><strong>Git</strong></p>
-			<p><a href="https://git-scm.com/download/win">Git for Windows</a></p>
-			<p><a href="http://www.sourcetreeapp.com/">Sourcetree</a> (GUI client)</p>
+			<p><a href="https://git-scm.com/download/win">Git for Windows</a> or <a href="http://www.sourcetreeapp.com/">Sourcetree</a> (GUI client)</p>
 		</li>
 		<li>
 			<p><strong>GitHub account</strong></p>
@@ -86,9 +100,9 @@
 
 	<h2>Activity</h2>
 	<ol>
-		<li>Fork the repo: <a href="https://github.com/arkon/jstlc">github.com/arkon/jstlc</a></li>
+		<li>Fork the repository: <a href="https://github.com/arkon/jstlc">github.com/arkon/jstlc</a></li>
 		<li>Clone your forked version to your machine.</li>
-		<li>Follow the README instructions to set it up.</li>
+		<li>Follow the repository's README instructions to set it up.</li>
 		<li>Fix it up!</li>
 		<li>Benchmark it (see below).</li>
 	</ol>
@@ -98,12 +112,13 @@
 		<li>
 			<p><strong>YSlow</strong></p>
 			<p><a href="http://yslow.org/">http://yslow.org/</a></p>
-			<p>YSlow runs locally in your browser.</p>
+			<p>YSlow is a local browser extension.</p>
 		</li>
 		<li>
 			<p><strong>WebPagetest</strong></p>
 			<p><a href="http://www.webpagetest.org/">http://www.webpagetest.org/</a></p>
-			<p>WebPagetest requires an actual URL, so you can use ngrok to expose your local server.</p>
+			<p>WebPagetest requires an actual URL, so you can use ngrok to expose your local server. In the directory where you placed ngrok, run:</p>
+			<p><code>$ ngrok http 8080</code></p>
 		</li>
 
 	</ul>
