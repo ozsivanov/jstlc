@@ -12,6 +12,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-nodemon');
   grunt.loadNpmTasks('grunt-uncss');
+  grunt.loadNpmTasks('grunt-contrib-compress');
 
 
   // Configure Grunt tasks
@@ -49,7 +50,6 @@ module.exports = function (grunt) {
         }
       }
     },
-
     nodemon: {
       dev: {
         script: 'server.js'
@@ -66,6 +66,7 @@ module.exports = function (grunt) {
 
   // Compile Sass once and start the server
   grunt.registerTask('server', ['sass', 'nodemon']);
+
 
   // Start the server and watches for Sass file changes
   grunt.registerTask('dev', ['concurrent']);

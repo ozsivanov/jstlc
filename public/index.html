@@ -11,24 +11,10 @@
   <link href="./vendor/flag-icon-css-master/css/flag-icon.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,300italic,300,400italic,600italic,600,700,700italic,800,800italic&subset=latin,cyrillic" rel="stylesheet" type="text/css">
   <link href="./style/style.css" rel="stylesheet">
-
-  <script src="./bower_components/jquery/dist/jquery.js"></script>
-  <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
-  <script src="./scripts/app.js"></script>
-
-  <!-- Google+ -->
-  <script src="https://apis.google.com/js/platform.js" async defer></script>
 </head>
 <body>
   <!-- Facebook -->
   <div id="fb-root"></div>
-  <script>(function(d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
-    fjs.parentNode.insertBefore(js, fjs);
-  }(document, 'script', 'facebook-jssdk'));</script>
 
   <nav class="nav">
     <a class="nav__link" href="#home" name="home">Home</a>
@@ -110,11 +96,10 @@
     <div class="footer__social">
       <!-- Twitter -->
       <a href="https://twitter.com/InfusionTweets" class="twitter-follow-button" data-show-count="false" data-show-screen-name="false">Follow @InfusionTweets</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+      
       <!-- Facebook -->
       <div class="fb-follow" data-href="https://www.facebook.com/infusiondev" data-layout="button" data-show-faces="true"></div>
       <!-- LinkedIn -->
-      <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script>
       <script type="IN/FollowCompany" data-id="13546"></script>
       <!-- Google + -->
       <div class="g-follow" data-annotation="none" data-height="20" data-href="https://plus.google.com/104682622332519155516" data-rel="publisher"></div>
@@ -138,4 +123,22 @@
     </div>
   </div>
 </body>
+
+
+  <script src="./bower_components/jquery/dist/jquery.js"></script>
+  <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
+  <script src="./scripts/app.js" async></script>
+
+  <!-- Google+ -->
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
+
+  <script>(function(d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.4";
+    fjs.parentNode.insertBefore(js, fjs);
+  }(document, 'script', 'facebook-jssdk'));</script async defer>
+  <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script async defer>
+      <script src="//platform.linkedin.com/in.js" type="text/javascript"> lang: en_US</script async defer>
 </html>

@@ -6,12 +6,14 @@ var bodyParser  = require('body-parser'),
 var app    = connect(),
     routes = require('./server/routes.js')();
 
+app.use(compression());
 app.use(function (req, res, next) {
   if (req.url.match(/.*\/(css)\/.+/)) {
     res.setHeader('Cache-Control', 'public, max-age=86400000');
   }
   next();
 });
+
 
 app.use(bodyParser.urlencoded());
 
